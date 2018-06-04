@@ -1,18 +1,18 @@
 // Find the Languages category.
 var category = _.find(window.OPENSHIFT_CONSTANTS.SERVICE_CATALOG_CATEGORIES,
-                      { id: 'languages' });
+                      { id: 'ai' });
 // Add Go as a new subcategory under Languages.
 category.subCategories.splice(2,0,{ // Insert at the third spot.
   // Required. Must be unique.
-  id: "go",
+  id: "tensorflow",
   // Required.
-  label: "Go",
+  label: "Tensorflow",
   // Optional. If specified, defines a unique icon for this item.
   icon: "icon-go-gopher",
   // Required. Items matching any tag will appear in this subcategory.
   tags: [
-    "go",
-    "golang"
+    "tensorflow",
+    "TF"
   ]
 });
 
@@ -25,27 +25,26 @@ window.OPENSHIFT_CONSTANTS.SERVICE_CATALOG_CATEGORIES.unshift({
   subCategories: [
     {
       // Required. Must be unique.
-      id: "go",
+      id: "iot",
       // Required.
-      label: "Go",
+      label: "IOT",
       // Optional. If specified, defines a unique icon for this item.
       icon: "icon-go-gopher",
       // Required. Items matching any tag will appear in this subcategory.
       tags: [
-        "go",
-        "golang"
+        "iot"
       ]
     },
     {
       // Required. Must be unique.
-      id: "jenkins",
+      id: "faas",
       // Required.
-      label: "Jenkins",
+      label: "FAAS",
       // Optional. If specified, defines a unique icon for this item.
       icon: "icon-jenkins",
       // Required. Items matching any tag will appear in this subcategory.
       tags: [
-        "jenkins"
+        "faas"
       ]
     }
   ]
